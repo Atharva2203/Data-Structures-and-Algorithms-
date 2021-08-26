@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+struct Rectangle
+{
+    int length;
+    int breadth;
+    char x;
+};
+
+int main()
+{
+    struct Rectangle r={10,5};
+    r.length=15;
+    r.breadth=10;
+    cout<<sizeof(r)<<endl;
+    cout<<r.length<<endl;
+    cout<<r.breadth<<endl;
+    return 0;
+}

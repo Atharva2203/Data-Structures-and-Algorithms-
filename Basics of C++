@@ -1,3 +1,4 @@
+*****STRUCTURES*****
 #include <iostream>
 
 using namespace std;
@@ -19,3 +20,51 @@ int main()
     cout<<r.breadth<<endl;
     return 0;
 }
+
+******__________******
+
+
+*****POINTERS*****
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // Using Stack //
+    int A[5]={2,4,6,8,10};
+    int *p;
+    p=A;
+    
+    // Using Heap //
+    int *x=new int[5];
+    x[0]=1;x[1]=2;x[2]=3;x[3]=4;x[4]=5;
+    for(int i=0;i<5;i++)
+    {
+        cout<<x[i]<<endl;
+    }
+}
+
+// For Structures //
+#include <iostream>
+
+using namespace std;
+
+struct Rectangle
+{
+    int length;
+    int breadth;
+};
+
+int main()
+{
+    struct Rectangle *p;
+    p=new Rectangle;
+    p->length=15;
+    p->breadth=10;
+    cout<<p->length<<endl;
+    cout<<p->breadth<<endl;
+}
+
+*****_________*****
+
